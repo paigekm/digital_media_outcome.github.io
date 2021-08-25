@@ -1,5 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">VUWTC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Tramps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Top tips</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Find a track near you</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="#">Join us</a>
+        </li>   
+      </ul>
+    </div>  
+  </nav>
+
+
     <head>
       <title>VUWTC's Online Journal</title>
       <meta charset="utf-8">
@@ -31,31 +55,10 @@ img{
 
 
 
-  <ul>
-    <li>Who is the VUWTC:</li>
-    <li>Our Tramps:</li>
-    <li>Top tips from us:</li>
-    <li>Find a Tramp near you:</li>
-  </ul>  
-
   <img src="images/carousel1.jpg" alt="Carousel 1: 2 people on a ridge overlooking Lake Rotoroa">
   <img src="images/carousel2.jpg" alt="Carousel 2: View out of a cave on Heaphy Track">
   <img src="images/carousel3.jpg" alt="Carousel 3: Two families prepared to begin the Heaphy Track">
 
-  <h2>Who is the VUWTC:</h2>
-  <p>The Victoria University of Wellington Tramping Club has been around since 1921, and is a group of keen university students who partake in
-    a huge variety of trips ranging from day walks around the Wellington hills, week long adventures in the Southern Alps, climbing, and taco dinners.<br></p>
-
-    <p>Link to a registration form to sign up for the VUWTC:<br><br>
-      Think this sounds like a bit of you? Sign up to join the VUWTC and join us on our next adventures, through the below form!<br>
-      Full name: input box<br>
-      Victoria University ID: input box (numbers only validation)<br>
-      Email: input box<br>
-      Which level of study are you currently at VicUni: drop down options<br>
-      On a scale, how experienced would you say you are in the Great Outdoors? slider<br>
-      I am not a robot: check box<br>
-
-    </p>
   
   <h2>Our Tramps:</h2>
   <p>In this section, I will have a carousel of click-able information cards with a photo and name of each tramp the club has completed. <br>
@@ -107,15 +110,7 @@ img{
         </div>
       </div>
     </div>
-        
-        Patuna Chasm Day Walk<br>
-        <img src="images/Patuna_Chasm/patuna_card.jpg" alt="Trampers in a rock face"> <br>
-        Lake Waikaremoana<br>
-        <img src="images/Lake_Waikaremoana/waikaremoana_card.jpg" alt="Trampers running down the beach with mountains in the background"><br> 
-        Nydia Track, Kenepuru Sounds<br>
-        <img src="images/Nydia/nydia_card.jpg" alt="View of an island with a tree on it, peeking through a window of bush"> <br>
-
-  
+    
     
     <h2>What to pack?</h2>
     <h3>Personal equipment:</h3>
@@ -173,6 +168,59 @@ img{
   <img src="images/green_view.jpg" alt="View of greenery"> 
   <img src="images/blue_lakes.jpg" alt="Trampers in front of Blue Lake, Nelson Lakes"> 
   <img src="images/otw_angelushut.jpg" alt="Mountain ranges on the track to Angelus Hut, Nelson Lakes"> 
+<br><br><BR>
+
+<div class="container">
+  <h2>Register to join us on our next adventures!</h2>
+  <form class="form-inline was-validated" action="/action_page.php">
+    <label for="email2" class="mb-2 mr-sm-2">Email:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email" required>
+    <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    <label for="pwd2" class="mb-2 mr-sm-2">Outdoors experience:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="exp" placeholder="Your level of experience" name="exp" required>
+    <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    <div class="form-check mb-2 mr-sm-2">
+      <label class="form-check-label">I am not a robot.  </label>
+        <input type="checkbox" class="form-check-input" name="remember" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+
+    </div>    
+
+<div class="container">
+  <!-- Button to Open the Modal -->
+    <button type="submit" class="btn btn-primary mb-2 data-toggle="modal" data-target="#myModal">Submit</button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Success</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          You have successfully registered.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+</form>
+</div>
 
 
 </body>
