@@ -12,15 +12,29 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
-img{
-  width:300px;
-}
 
-#bannerimage {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-}
+      hr.hr-text {
+        position: relative;
+          border: none;
+          height: 3px;
+          background: #000;
+      }
+
+      hr.hr-text::before {
+          content: attr(data-content);
+          display: inline-block;
+          background: #fff;
+          font-weight: bold;
+          font-size: 1.5rem;
+          color: #000;
+          border-radius: 30rem;
+          padding: 0.2rem 2rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+
 
   </style>
 </head>
@@ -34,9 +48,6 @@ img{
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Our Tramps</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">Top tips</a>
         </li>
         <li class="nav-item">
@@ -49,30 +60,38 @@ img{
     </div>  
   </nav>
 
-  <div id="bannerimage"><img src="images/bannerimagebeachfinal.jpg" alt="Banner img"></div>
+  <div class="container-fluid"><img class="img-fluid" src="images/bannerimagebeachfinal.jpg" alt="Banner img"></div>
 
-<div class="jumbotron">
   <div class="container">
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <p>We support you from advice, to choosing the right destination, so you can get right out there.</p>
+        </div>
+        <div class="col-sm">
+          <h3>Supporting teens to go out and explore the classic tramps NZ has to offer!</h3>
+        </div>
+        <div class="col-sm">
+          <p>"Of all the paths you take in life, make sure a few of them are untouched/dirt."<p>
+        </div>
+      </div>
+    </div>
 
+    <br><br><br>
 
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+          <div class="mb-4">
+            
+              <!-- Gradient divider -->
+              <hr data-content="September's Top 4" class="hr-text">
+          </div>
+         
+      </div>
+  </div>
+  <br>
 
-
-    <h1>Wild</h1>
-
-</div>
-
-
-
-  <img src="images/carousel1.jpg" alt="Carousel 1: 2 people on a ridge overlooking Lake Rotoroa">
-  <img src="images/carousel2.jpg" alt="Carousel 2: View out of a cave on Heaphy Track">
-  <img src="images/carousel3.jpg" alt="Carousel 3: Two families prepared to begin the Heaphy Track">
-
-  
-  <h2>Our Tramps:</h2>
-  <p>In this section, I will have a carousel of click-able information cards with a photo and name of each tramp the club has completed. <br>
-      These cards can be clicked on, and the user will be led to a sub-page will a recount of the tramp/storytime.</p>
-
-      <br> 
       <style>
           .container-fluid{
             
@@ -90,11 +109,8 @@ img{
                               <img class="card-img-top" src="images/nikau.jpg" alt="View of a Nikau Palm on the final day of the Heaphy Track" style="width:100%">
                               <div class="card-body">
                               <h4 class="card-title">Heaphy Track</h4>
-                              <p class="card-text">Travel through expansive tussock downs, lush forests and nīkau palms to the roaring seas of the West Coast. <br><br>
-                                  See if you can spot unique wildlife including spotted kiwi/roroa and takahē. <br><br>
-                                  The human history of Heaphy Track dates back hundreds of years. <br><br>
-                                  Try and spy the nocturnal carnivorous land snail around Heaphy Hut on a damp night.</p>
-                                  <a href="#" class="btn btn-primary stretched-link">See more</a>
+                              <p class="card-text">Travel through tussock downs, lush forests and nīkau palms to the roaring seas of the West Coast.
+                                  Even try to spot the world's only kiwi and carnivorous snail species!</p>
                               </div>
                           </div>
                   </div>
@@ -103,10 +119,8 @@ img{
                               <img class="card-img-top" src="images/mountain.jpg" alt="View of a mountain on the way to Blue Lakes Hut" style="width:100%">
                               <div class="card-body">
                               <h4 class="card-title">Nelson Lakes</h4>
-                              <p class="card-text">Explore the heart of the South Island! <br><br>
-                              Visit Angelus Hut which sits on the shores of Lake Angelus, surrounded by spectacular mountain views!<br><br>
-                              From May to October, the lake is frozen, snow blankets your route and you may have to dig your way to the hut!</p>
-                                  <a href="#" class="btn btn-primary stretched-link">See more</a>
+                              <p class="card-text">Explore the heart of the South Island, surrounded by spectacular mountain views!
+                              Stop by Blue Lake to see the clearest natural body of fresh water known to man.</p>
                               </div>
                           </div>
                   </div> <!-- end inner row-->
@@ -120,10 +134,9 @@ img{
                           <img class="card-img-top" src="images/Rakiura/rakiura_card.jpg" alt="Trampers walking across a swing bridge" style="width:100%">
                           <div class="card-body">
                           <h4 class="card-title">Rakiura Track</h4>
-                          <p class="card-text">Escape on an island adventure! <br><br>
-                          Relax and unwind in the peaceful surroundings with the bush, birds and beach at your side!<br><br>
-                          Follow this leisurely circuit track along open coastline, through forest and along sheltered shores.</p>
-                              <a href="#" class="btn btn-primary stretched-link">See more</a>
+                          <p class="card-text">Escape on an island adventure!
+                          Relax and unwind with the bush, birds and beach at your side!
+                          Follow this leisurely circuit track along coastline, forest and sheltered shores.</p>
                           </div>
                       </div>
                   </div>
@@ -132,11 +145,9 @@ img{
                           <img class="card-img-top" src="images/Kepler/kepler_card.jpg" alt="Kepler ridgeline track leading into fog" style="width:100%">
                           <div class="card-body">
                           <h4 class="card-title">Kepler Track</h4>
-                          <p class="card-text">Stroll past the beech-forested shorelines of lakes Te Anau and Manapouri! <br><br>
-                          To tussock-covered ridgelines with spectacular alpine vistas!<br><br>
+                          <p class="card-text">Stroll past the beech-forested shorelines of lakes Te Anau and Manapouri, to tussock-covered ridgelines with spectacular alpine vistas!
                           You won't want to miss it.
                           </p>
-                              <a href="#" class="btn btn-primary stretched-link">See more</a>
                           </div>
                       </div>
                   </div>
@@ -144,8 +155,27 @@ img{
           </div>
       </div> <!-- end outer row -->
   </div>
+  <br>
+  <br>
+    <div class = "container">
+            <h3>The mountains are calling. This is something to be lived, not just read about.</h3>
+    </div>
+    <br>
 
 </div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+      
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Paige Martin</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
 
 
 </body>
