@@ -35,6 +35,18 @@
           transform: translate(-50%, -50%);
       }
 
+    .container.custom-container {
+      padding: 8px;
+    }
+
+    .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
   </style>
 </head>
@@ -61,45 +73,39 @@
   </nav>
 
   <div class="container-fluid"><img class="img-fluid" src="images/bannerimagebeachfinal.jpg" alt="Banner img"></div>
-<!-- conatiner for whole page-->
+<!-- container for whole page-->
   <div class="container">
 
+    <div class="custom-container container">
           <div class="mb-4">
               <!-- Gradient divider -->
               <hr data-content="A word from our experts" class="hr-text">
           </div>
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h4>Test drive your boots and pack</h4>
-                    <small>@tramper123</small>
-                </div>        
-                <p>The two pieces of gear that can make you the most uncomfortable are your pack and your shoes because they are the two items you feel all day long. 
-                  Don’t wait until your first tramp to try them out.</p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h4>Bug spray!</h4>
-                    <small>@lilytramps</small>
-                </div>
-                <p>If you have not yet encountered sandflies, you 100% will while tramping in NZ! Sandflies are especially abundant in warmer areas. You can also ward them off with a campfire because they don’t like smoke.</p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h4>Layers layers layers</h4>
-                    <small>@tramper123</small>
-                </div>        
-                <p>Weather in New Zealand can change alarmingly quickly, so it’s important to always be prepared.  While you may be hot while hiking, it can get pretty cold once you stop moving and the sun sets. Always bring a rain jacket just in case!</p>
-            </a>
-        </div>
-        <br><br>
+          </div>
+          
          
-
-                <div class="mb-4">
-                
-                    <!-- Gradient divider -->
-                    <hr data-content="Neccessities in Nature" class="hr-text">
+          <div class = "row" > 
+            <div class = "col-sm-4"" style="padding: 0.5rem;"">
+                <img class="img-fluid" src = "images/sandfliesedited.jpg" alt = "Image of two people are around campfires">
+                <div class="hero-text">
+                  <a style = "background-color: rgb(255,255,255,0.6); padding: 16px; color: black;">SANDFLIES</a>
+                  </div>
+            </div>
+    
+            <div class = "col-sm-4"" style="padding: 0.5rem;"">
+              <img class="img-fluid" src = "images/testdriveedited.jpg" alt = "Image of 3 people at a beach">
+              <div class="hero-text">
+                <a style = "background-color: rgb(255,255,255,0.6); padding: 16px; color: black;">TEST IT OUT</a>
                 </div>
+          </div>
+
+          <div class = "col-sm-4"" style="padding: 0.5rem;"">
+            <img class="img-fluid" src = "images/layersedited.jpg" alt = "Image of moon at sunset time">
+            <div class="hero-text">
+              <a style = "background-color: rgb(255,255,255,0.6); padding: 16px; color: black;">LAYERS</a>
+              </div>
+        </div>
+        </div>  
 
                 <style>
                   .form-check-label{
@@ -125,6 +131,7 @@
                                 <img class="img-fluid" src = "images/other/letsgo1.jpg" alt = "Two people overlooking clouds">
                             </div>
                             <div class = "col-sm-6">
+                              <hr data-content="The Neccessities" class="hr-text">
                                     <div class="form-check">
                                     <label class="form-check-label">
                                     <input type="checkbox" class="form-check-input" value="">40-60L Backpack
@@ -190,16 +197,11 @@
         </div>
   
 
-<div class="mb-4">
-    
-    <!-- Gradient divider -->
-    <hr data-content="Your wardrobe in the wild" class="hr-text">
-</div>
-
        
 <div class = "container">
     <div class = "row align-items-center">
         <div class = "col-sm-6">
+          <hr data-content="A Wild Wardrobe" class="hr-text">
           <div class="form-check">
           <label class="form-check-label">
           <input type="checkbox" class="form-check-input" value="">Walking boots well broken in
@@ -261,14 +263,9 @@
       </div>
   </div>
 </div>
-  <br>
-  <br>
-    <div class = "container">
-            <h3>Not all who wander are lost - JRR Tolkein</h3>
-    </div>
-    <br>
+<br>
 
-
+</div>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
       
