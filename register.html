@@ -114,7 +114,57 @@
   </div></div>
 <!-- container for whole page-->
   <div class="container">
-<p>insert a form here</p>
+<br>
+    <div class="container">
+      <h2>Register to our email newsletter for more!</h2>
+      <form class="form-inline was-validated" action="/action_page.php">
+      <label for="email2" class="mb-2 mr-sm-2">Email:</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email" required>
+      <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      <label for="pwd2" class="mb-2 mr-sm-2">Outdoors experience:</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="exp" placeholder="Your level of experience" name="exp" required>
+      <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      <div class="form-check mb-2 mr-sm-2">
+        <label class="form-check-label">Not a robot.  </label>
+          <input type="checkbox" class="form-check-input" name="remember" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this box to continue.</div>
+      </div>    
+      
+      <div class="container">
+      <!-- Button to Open the Modal -->
+      <button type="submit" class="btn btn-primary mb-2 data-toggle="modal" data-target="#myModal">Submit</button>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Success</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            You have successfully registered.
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+      
+      </div>
+      </form>
+      </div>
 </div>
 </body>
 <!-- Footer -->
@@ -128,9 +178,6 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-
-
-
 
 </body>
 </html>
