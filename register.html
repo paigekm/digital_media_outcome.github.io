@@ -71,64 +71,86 @@
   </div>
 </div>
 
-<!-- container for whole page-->
-<div class="container3">
-    <img src="images/register_background_pic.jpg" alt="Five teenagers on a tramp by a river">
-  <div class="top-left">Get out there!</div>
-  
+<!--main code-->
+<div class="container"><br>
+<div class="row1">
+  <div class="col-lg-8 mx-auto">
+      <div class="mb-4">
+          <!-- Section divider -->
+          <hr data-content="Get out there!" class="hr-text">
+      </div> 
+  </div>
+</div><br>
+ <!-- Section divider -->
+ <div class="text-center">
+ <p>Sign up for free, to receive our monthly newsletter! <br>More tips, discount offers on gear and track recommendations right to your inbox.</p>
 </div>
+</div>
+
+<div class="container-fluid col-lg-10">
+  <div class="row"> <!-- inner 2 columns)-->
+
+    <div class="col-md-6">
+          <img src="images/register_background_pic_edited.jpg" alt="Five teenagers on a tramp by a river" style="width:100%">
+      </div>
+
+    <div class="col-md-6">
+
+                <form action="index.html" class="needs-validation" novalidate>
+                  <div class="form-group">
+                    <br>
+                    <label for="name"><strong> Full Name:</strong></label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                  <div class="form-group">
+                      <label for="eml"><strong>Email:</strong></label>
+                      <input type="email" class="form-control" id="eml" placeholder="Enter email" name="eml" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please input a correct email</div>
+                    </div>
+
+                    
+                    <hr>
+              
+                    <div class = "form-check-inline">
+                      <label class = "form-check-label"> <strong> Level of outdoors experience? </strong> &nbsp; </label>
+                        <input type="range" class="custom-range" id="customRange" name="points1">
+                        </div>
+              
+                    <hr>
+            
+              
+                    <div class= "form-group form-check" >
+                        <label class= "form-check-label" >
+                          <input class= "form-check-input" type= "checkbox" name= "remember" required > I agree to the Terms and Conditions.
+                          <span class = "valid-feedback"> Valid. </span>
+                          <span class= "invalid-feedback" > Check this checkbox to continue. </span>
+                        </label>
+                      </div>
+            
+              
+                  <button type= "submit" class= "btn btn-primary" > Submit </button>
+                  <br>
+                </form>
+                <br>
+                
+
+
+
+    
+
+
+
+
+
+      </div> <!-- end inner row-->
+
+  </div>
+</div>
+   
 <br>
-    <div class="container">
-      <h2>Get out there!</h2>
-      <form class="form-inline was-validated" action="/action_page.php">
-      <label for="email2" class="mb-2 mr-sm-2">Email:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email" required>
-      <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
-      <label for="pwd2" class="mb-2 mr-sm-2">Outdoors experience:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="exp" placeholder="Your level of experience" name="exp" required>
-      <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
-      <div class="form-check mb-2 mr-sm-2">
-        <label class="form-check-label">Not a robot.  </label>
-          <input type="checkbox" class="form-check-input" name="remember" required>
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Check this box to continue.</div>
-      </div>    
-      
-      <div class="container">
-      <!-- Button to Open the Modal -->
-      <button type="submit" class="btn btn-primary mb-2 data-toggle="modal" data-target="#myModal">Submit</button>
-      
-      <!-- The Modal -->
-      <div class="modal" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-        
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Success</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          
-          <!-- Modal body -->
-          <div class="modal-body">
-            You have successfully registered.
-          </div>
-          
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-          
-        </div>
-      </div>
-      </div>
-      
-      </div>
-      </form>
-      </div>
-</body>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
       

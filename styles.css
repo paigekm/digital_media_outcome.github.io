@@ -116,6 +116,11 @@ hr.hr-text {
     padding-top: 15px;
 }
 
+.container-fluid2{         
+  background-color:rgba(230,230,230,0.5);
+  padding:15px;
+}
+
 .container1{        
     background-color:rgba(230,230,230,0.5);
     padding:50px;
