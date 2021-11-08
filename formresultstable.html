@@ -18,21 +18,17 @@
   </head>
 
   <body>
-
-    <style>
-        td:first-child{
-            font-weight: bold;
-        }
-    </style>
-
-<table>
+<div class="container">
+    <br><h1>Your newsletter subscription details:</h1><br>
+<table class="table table-bordered">
     <tr><td>Full Name: </td> <td> {{ form["name"] }} </td></tr>
     <tr><td>Email: </td> <td> {{ form["email"] }} </td></tr>
-    <tr><td>Level of Outdoor experience:   </td> <td> {{ form["experiencepoints"] }} % </td></tr>
+    <tr><td>Level of Outdoor experience:</td> <td>{{ form["experiencepoints"] }} % </td></tr>
     <tr><td>T&Cs: </td> <td>  {% if form["terms"]:%}
                                 I have agreed to the Terms and Conditions.
                             {% endif %} </td></tr>
 
 </table>
+</div>
 </body>
 </html>

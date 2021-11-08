@@ -81,6 +81,10 @@ hr.hr-text {
 
   }
 
+  td:first-child{
+    font-weight: bold;
+}
+
 
 /* -- check boxes -- */
 
