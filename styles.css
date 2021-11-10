@@ -56,12 +56,17 @@ hr.hr-text {
     }
 
 
-    .top-left{
-        position: absolute;
-        top:8px;
-        left:16px;
-      }
-
+  .top-left{
+      position: absolute;
+      top:8px;
+      left:16px;
+    }
+    
+  .tramp-heading{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 
@@ -105,6 +110,10 @@ hr.hr-text {
   .row1{
     background-color:white;
   }
+  .row2{
+    background-color: rgb(240,240,240);
+    padding:25px;
+  }
 
 
 
@@ -120,8 +129,8 @@ hr.hr-text {
     padding-top: 15px;
 }
 
-.container-fluid2{         
-  background-color:rgba(230,230,230,0.5);
+.container-fluid2 {
+  background-color:white;
   padding:15px;
 }
 
@@ -141,3 +150,44 @@ hr.hr-text {
 }
 
 /*-- navigation ---*/
+
+/*-- map with button --*/
+.find-track-img{
+  width:80%; 
+  display:block; 
+  margin:auto;
+  padding-bottom: 20px;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 85%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
