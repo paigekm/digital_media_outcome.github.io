@@ -56,6 +56,8 @@ hr.hr-text {
     }
 
 
+
+
   .top-left{
       position: absolute;
       top:8px;
@@ -189,5 +191,9 @@ hr.hr-text {
 
 .container .btn:hover {
   background-color: black;
+}
+
+.no-padding{
+  padding:0;
 }
 
